@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom"
 
-const Item = ({products}) => {
-    return(
-        <ul>
-            {products.map(product => <Link to={`/product/${product.id}`} key={product.id}>{product.name}</Link>) }
+const ItemList = ({ products }) => {
+    return (
+        <ul style={{display: 'flex', flexDirection: 'column'}}>
+            { products.map(product => <Link to={`/detail/${product.id}`} key={product.id}>{product.name}</Link>) }
         </ul>
     )
 }
 
-export default Item
+export default ItemList

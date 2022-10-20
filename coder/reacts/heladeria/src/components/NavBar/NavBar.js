@@ -14,6 +14,8 @@ const NavBar = (props) => {
             <ul className='navbar_list_style'>
                 <Link to='/'> <li>Home</li> </Link>
                 <Link to='/products'> <li>Productos</li> </Link>
+                <Link to='/category/postre'> <li>postres</li> </Link>
+                <Link to='/category/pote'> <li>potes</li> </Link>
             </ul>
             <CartWidget/>
         </nav>
